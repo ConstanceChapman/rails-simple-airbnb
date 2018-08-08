@@ -1,0 +1,48 @@
+<div class="flat-banner">
+</div>
+
+<div class="show-cards">
+  <div class="big-column">
+    <div class="show-card">
+      <h1><%= @flat.name %></h1>
+      <p><%= @flat.address %></p>
+    </div>
+    <div class="show-card" id="description">
+      <h2>A bit more about this flat...</h2>
+      <p><%= @flat.description %></p>
+    </div>
+  </div>
+  <div class="small-column">
+    <div class="show-card" id="booking">
+      <h4>Book this flat</h4>
+      <form action="#">
+        <div class="form-group form-inline">
+          <label for="checkin" class="add-on">From: </label>
+          <input type="text" id="checkin" placeholder="08/08/18" class="form-control">
+        </div>
+        <div class="form-group form-inline">
+          <label for="checkout" class="add-on">To: </label>
+          <input type="text" id="checkout" placeholder="08/08/18" class="form-control">
+        </div>
+        <input type="submit" value="Book" class="btn-form">
+      </form>
+
+    </div>
+    <div class="show-card">
+      <h4>Details</h4>
+      <div id="details">
+        <p><i class="fas fa-users"></i> <%= @flat.number_of_guests %></p>
+        <p><i class="fas fa-euro-sign"></i> <%= @flat.price_per_night %></p>
+      </div>
+    </div>
+    <div class="show-card" id="share">
+      <p>Share</p>
+      <div class="links">
+        <i class="fab fa-facebook-square"></i>
+        <i class="fab fa-twitter-square"></i>
+        <i class="fab fa-pinterest-square"></i>
+        <i class="fas fa-envelope-square"></i>
+      </div>
+    </div>
+  </div>
+</div>
